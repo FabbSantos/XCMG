@@ -1,5 +1,5 @@
 import { component$, useStylesScoped$ } from '@builder.io/qwik';
-import { QwikLogo } from '../icons/qwik';
+import Logo from '../../img/xcmg.png'
 import styles from './header.css?inline';
 
 export default component$(() => {
@@ -8,24 +8,22 @@ export default component$(() => {
   return (
     <header>
       <div class="logo">
-        <a href="https://qwik.builder.io/" target="_blank" title="qwik">
-          <QwikLogo />
-        </a>
+          <img src={Logo} alt=" XCMG logo" height="40px" width="180px"/>
       </div>
-      <ul>
+      <ul class="hidden lg:block">
         <li>
-          <a href="https://qwik.builder.io/docs/components/overview/" target="_blank">
-            Docs
+          <a href="#consorcio">
+            Consócio
           </a>
         </li>
         <li>
-          <a href="https://qwik.builder.io/examples/introduction/hello-world/" target="_blank">
-            Examples
+          <a href="#maquinas">
+            Maquinários
           </a>
         </li>
         <li>
-          <a href="https://qwik.builder.io/tutorial/welcome/overview/" target="_blank">
-            Tutorials
+          <a href="#sobre">
+            A XCMG
           </a>
         </li>
       </ul>

@@ -1,5 +1,6 @@
 import { component$, Slot } from '@builder.io/qwik';
 import { loader$ } from '@builder.io/qwik-city';
+import Footer from '~/components/footer';
 
 import Header from '../components/header/header';
 
@@ -20,10 +21,7 @@ export default component$(() => {
         </section>
       </main>
       <footer>
-        <a href="https://www.builder.io/" target="_blank">
-          Made with ♡ by Builder.io
-          <div>{serverTime.value.date}</div>
-        </a>
+        <Footer/>
       </footer>
     </>
   );
