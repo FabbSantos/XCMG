@@ -11,7 +11,7 @@ export const useServerTimeLoader = loader$(() => {
 });
 
 export default component$(() => {
-  const serverTime = useServerTimeLoader();
+  // const serverTime = useServerTimeLoader();
   return (
     <>
       <main>

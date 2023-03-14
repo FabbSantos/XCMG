@@ -22,8 +22,8 @@ export default component$(() => {
           </a>
         </li>
         <li>
-          <a href="#sobre">
-            A XCMG
+          <a href="#onde">
+            Onde estamos
           </a>
         </li>
       </ul>

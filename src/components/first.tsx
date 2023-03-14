@@ -4,7 +4,7 @@ import Form from "./form";
 
 export default component$(() => {
     return (
-        <div class="container w-full bg-[#004C96] flex justify-between h-[9 0vh]">
+        <div class=" w-full bg-[#004C96] flex justify-between h-[9 0vh]">
             <div class="hidden lg:block relative min-w-[40vw]">
                 <img class="" src={img} alt="heroimg"  height="auto" width="100%"/>
             </div>
