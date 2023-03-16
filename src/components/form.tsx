@@ -72,7 +72,7 @@ export const form = `
   form button {
     width: 100%;
     border-radius: 5px;
-    background-color: none !important;
+    background-color: #004C96 !important;
     transition: background-color .2s ease-in-out;
     border: 1px solid white;
     padding: 7px 0;
@@ -85,6 +85,7 @@ export const form = `
   }
 
   form button:hover,  {
+    background-color: rgb(30, 58, 138);
     outline:none;
   }
   select {

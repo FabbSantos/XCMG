@@ -1,33 +1,29 @@
 import { component$ } from "@builder.io/qwik";
-import one from '../img/1.png'
-import two from '../img/2.png'
-import three from '../img/3.png'
-import four from '../img/4.png'
-import five from '../img/5.png'
+import one from '../img/maquina1.png'
+import two from '../img/maquina2.png'
+import three from '../img/maquina3.png'
 
 export default component$(() => {
     return (
         <>
-            <div id="maquinas" class="flex flex-col md:flex-row flex-wrap max-w-[90vw] mx-auto justify-center text-center text-[#004C96] font-bold gap-[2.3em]">
+            <div id="maquinas" class="flex flex-col md:flex-row flex-wrap max-w-[90vw] mx-auto justify-around text-center text-[#004C96] font-bold my-16">
                 <div class="flex flex-col justify-center items-center">
-                    <img src={one} alt="Guindaste de Rastelo" loading="lazy" height="250px" width="380px" />
-                    <h4>Guindaste de rastelo <br />XGC25T</h4>
+                    <img src={one} alt="Guindaste de Rastelo" loading="lazy" height="250px" width="300px" />
+                    <h4 class="font-bold text-3xl my-4">XE17U</h4>
+                    <p class="font-medium text-xl my-4">R$210.000,00</p>
+                    <p class="font-medium text-2xl text-center">Plano Normal<br/>100 meses - R$2519,90</p>
                 </div>
                 <div class="flex flex-col justify-center items-center">
-                    <img src={two} alt="Guindaste de Rastelo" loading="lazy" height="250px" width="380px" />
-                    <h4>Guindaste de rastelo <br />XGC88000</h4>
+                    <img src={two} alt="Guindaste de Rastelo" loading="lazy" height="250px" width="300px" />
+                    <h4 class="font-bold text-3xl my-4">XCB-P25/L25</h4>
+                    <p class="font-medium text-xl my-4">R$220.000,00</p>
+                    <p class="font-medium text-2xl text-center">Plano Normal<br />100 meses - R$2639,90</p>
                 </div>
                 <div class="flex flex-col justify-center items-center">
-                    <img src={three} alt="Guindaste de caminhão" loading="lazy" height="250px" width="380px" />
-                    <h4>Guindaste de caminhão <br />XCT25L5_Y</h4>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                    <img src={four} alt="Escavadora de minas" loading="lazy" height="250px" width="380px" />
-                    <h4>Escavadora de minas<br />XE700D</h4>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                    <img src={five} alt="Carregador de rotas" loading="lazy" height="250px" width="380px" />
-                    <h4>Carregador de rotas<br />LW330FN</h4>
+                    <img src={three} alt="Guindaste de caminhão" loading="lazy" height="250px" width="300px" />
+                    <h4 class="font-bold text-3xl my-4">XCB-P30/L30</h4>
+                    <p class="font-medium text-xl my-4">R$230.000,00</p>
+                    <p class="font-medium text-2xl text-center">Plano Normal<br />100 meses - R$2759,89</p>
                 </div>
             </div>
             <div class="w-full flex justify-center py-[1em]">

@@ -1,5 +1,5 @@
 import { component$, useStylesScoped$ } from '@builder.io/qwik';
-import Logo from '../../img/xcmg.png'
+import Logo from '../../img/logo.jpg'
 import styles from './header.css?inline';
 
 export default component$(() => {
