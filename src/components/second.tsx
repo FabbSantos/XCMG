@@ -8,7 +8,7 @@ export default component$(() => {
     return (
         <div id="consorcio" class="flex flex-col md:flex-row justify-center md:justify-around align-center bg-bg-3 bg-cover py-[2em]">
             <div class="flex flex-col justify-start items-center gap-2 text-white basis-[20%]">
-                <h2 class="text-xl min-h-[2.5em] text-center font-bold">Menor custo do mercado</h2>
+                <h2 class="text-xl min-h-[2.5em] text-center font-extrabold">Menor custo do mercado</h2>
                 <img src={cofrinho} alt="Menor custo do mercado" loading="lazy" width="130px" height="130px"/>
                 <ul class="max-w-[80%]">
                     <li>Sem Juros</li>
@@ -18,7 +18,7 @@ export default component$(() => {
             </div>
 
             <div class="flex flex-col justify-start items-center gap-2 text-white basis-[20%]">
-                <h2 class="text-xl min-h-[2.5em] text-center font-bold">Lances facilitados</h2>
+                <h2 class="text-xl min-h-[2.5em] text-center font-extrabold">Lances facilitados</h2>
                 <img src={lances} alt="Lances facilitados" loading="lazy" width="130px" height="130px" />
                 <ul class="max-w-[80%]">
                     <li>Rapidez na formação de grupos</li>
@@ -28,7 +28,7 @@ export default component$(() => {
             </div>
 
             <div class="flex flex-col justify-start items-center gap-2 text-white basis-[20%]">
-                <h2 class="text-xl min-h-[2.5em] text-center font-bold">Planos diferenciados</h2>
+                <h2 class="text-xl min-h-[2.5em] text-center font-extrabold">Planos diferenciados</h2>
                 <img src={planos} alt="Planos diferenciados" loading="lazy" width="130px" height="130px" />
                 <ul class="max-w-[80%]">
                     <li>Parcelas lineares</li>
