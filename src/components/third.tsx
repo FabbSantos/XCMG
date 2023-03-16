@@ -26,7 +26,7 @@ export default component$(() => {
                     <p class="font-medium text-2xl text-center">Plano Normal<br />100 meses - R$2759,89</p>
                 </div>
             </div>
-            <div class="w-full flex justify-center py-[1em]">
+            <div class="w-full flex justify-center py-[1em] pb-20">
                 <button class="font-bold text-xl py-1 px-[2em] rounded-xl bg-[#004C96] text-white self-center"> Veja mais </button>
             </div>
         </>

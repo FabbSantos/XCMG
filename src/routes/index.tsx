@@ -14,7 +14,6 @@ export default component$(() => {
       <Second/>
       <Title t="Nossos Produtos"/>
       <Third/>
-      <Title t="Sobre a XCMG:"/>
       <Fourth/>
     </>
   );
