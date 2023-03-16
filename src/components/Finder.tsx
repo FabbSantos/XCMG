@@ -5,7 +5,7 @@ import { ChevronRightIcon } from "qwik-feather-icons";
 export default component$(() => {
     return(
         <div class="ml-0">
-            <form class="max-w-[30%] pl-0 flex flex-row justify-between">
+            <form class="lg:max-w-[30%] pl-0 flex flex-row justify-between">
                 <select name="estado" id="estado" class="rounded-3xl py-3 pl-4 basis-[80%]">
                     <option value="Estado" selected disabled> Estado</option>
                     <option value="rj">Rio de Janeiro</option>
