@@ -27,6 +27,7 @@
     "@types/eslint": "8.21.0",
     "@types/node": "^18.13.0",
     "@types/node-fetch": "latest",
+    "@types/papaparse": "^5.3.7",
     "@typescript-eslint/eslint-plugin": "5.51.0",
     "@typescript-eslint/parser": "5.51.0",
     "autoprefixer": "10.4.11",
@@ -42,6 +43,7 @@
     "vite-tsconfig-paths": "3.5.0"
   },
   "dependencies": {
+    "papaparse": "^5.4.0",
     "qwik-feather-icons": "^1.2.0"
   }
 }
