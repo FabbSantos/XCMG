@@ -1,13 +1,11 @@
 import { component$ } from "@builder.io/qwik"
 import type { DocumentHead } from "@builder.io/qwik-city"
-import FirstTP from "../components/firstTP"
-import Footer from "../components/footer"
+import FirstTP from "../../components/firstTP"
 
 export default component$(() => {
     return(
         <>
             <FirstTP/>
-            <Footer/>
         </>
     )
 })
