@@ -30,7 +30,7 @@ try{
   $utmParameters = getUtmParametersFromReferrer();
 
   $url = "https://cc.swr.work/lead"; //"https://swr-api.app/lead";
-  $token = "your_token_here";
+  $token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjbGllbnRlc19pZCI6MzUsImlhdCI6MTY3OTA4NjgxNn0.GAY7-vf08ZfjGTVlkiDsCOKa-6Ci1pTnfmWRBIKMhaweyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjbGllbnRlc19pZCI6MzUsImlhdCI6MTY3OTA4NjgxNn0.GAY7-vf08ZfjGTVlkiDsCOKa-6Ci1pTnfmWRBIKMhaw";
   $nome = $_POST["nome"] . ' ' . $_POST["sobrenome"];
   $telefone = $_POST["tel"];
   $email = $_POST["email"];
