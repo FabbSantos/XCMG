@@ -14,6 +14,7 @@ export default extendConfig(baseConfig, () => {
       staticAdapter({
         origin: 'https://consorcioxcmg.com.br',
         //origin: 'https://bj-consulting.net',
+        //origin: 'https://consorcioxcmg.bj-consulting.net',
       }),
     ],
   };
