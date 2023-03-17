@@ -85,6 +85,9 @@ export default component$(() => {
 
             </form>
 
+            {
+                data.foundDealers.length
+                ?
             <div class="w-full text-white">
                 <table class="w-full text-center">
                     <thead class="border-y-4">
@@ -105,6 +108,8 @@ export default component$(() => {
                     </tbody>
                 </table>
             </div>
+                : <></>
+            }
         </div>
     )
 })
