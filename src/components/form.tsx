@@ -55,10 +55,9 @@ export default component$(() => {
                 {/* onInput$={(e) => (data.email = (e.target as HTMLInputElement).value)} /> */}
             </fieldset>
 
-            <fieldset>
+            {/* <fieldset>
                 <input required name="cidade" type="text" placeholder='Cidade' maxLength={50} />
-                {/* onInput$={(e) => (data.cidade = (e.target as HTMLInputElement).value)} /> */}
-            </fieldset>
+            </fieldset> */}
 
             <button id="submit" type="submit" value="Enviar" aria-label='Enviar formulário'>Enviar</button>
         </form>
