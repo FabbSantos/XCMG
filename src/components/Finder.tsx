@@ -88,19 +88,19 @@ export default component$(() => {
             {
                 data.foundDealers.length
                 ?
-            <div class="w-full text-white">
-                <table class="w-full text-center">
-                    <thead class="border-y-4">
+                    <div class="w-full text-white p-10 pl-0 rounded-3xl max-w-[70%] bg-transparent mt-20">
+                <table class="w-full text-center rounded-xl">
+                    <thead class="border-y-4 border-x-4">
                         <tr>
-                            <th>Dealer</th>
-                            <th>Endereço</th>
+                            <th class="p-2">Dealer</th>
+                            <th class="w-[70%]">Endereço</th>
                         </tr>
                     </thead>
-                    <tbody class="border-y-2">
+                    <tbody class="border-y-2 border-x-4">
                         {data.foundDealers.map(dealer => {
                             return (
                                 <tr>
-                                    <td>{dealer.name}</td>
+                                    <td class="p-5">{dealer.name}</td>
                                     <td>{dealer.address}</td>
                                 </tr>
                             )

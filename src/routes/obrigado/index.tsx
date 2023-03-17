@@ -15,7 +15,7 @@ export const head: DocumentHead = {
     meta: [
       {
         name: 'description',
-        content: 'Página do Consórcio XCMG',
+        content: 'Página de agradecimento do Consórcio XCMG',
       },
     ],
   };
