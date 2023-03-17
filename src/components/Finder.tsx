@@ -14,7 +14,7 @@ export default component$(() => {
     })
 
     useBrowserVisibleTask$(() => {
-        console.log('Rodou!')
+        //console.log('Rodou!')
         async function readCSV() {
             const url = `${window.location.protocol}//${window.location.host}/Endereços Dealers.csv`
             // const response = await fetch('Endereços Dealers.csv')
@@ -24,13 +24,13 @@ export default component$(() => {
                 worker: true,
                 skipEmptyLines: true,
                 complete: function (result: ParseResult<string[]>) {
-                    console.log(result)
+                    //console.log(result)
 
                     const stateCities = {}
                     const cityDealers = {}
                     let currentDealer = ''
                     for (const row of result.data) {
-                        console.log(row)
+                        //console.log(row)
 
                         if (row[0])
                             currentDealer = row[0]
@@ -56,9 +56,9 @@ export default component$(() => {
                     data.stateCities = stateCities
                     data.statesAbbr = Object.keys(stateCities).sort()
 
-                    console.log(data)
+                    //console.log(data)
 
-                    console.log("All done!")
+                    //console.log("All done!")
                 }
             })
         }
@@ -79,16 +79,20 @@ export default component$(() => {
                     {data.stateCities[data.selectedState]?.map((city: string) => <option value={city}></option>)}
                 </datalist>
 
-                <button class="p-3 bg-[#248DF2] rounded-full flex-grow-0 w-14 md:basis-[10%] md:ml-4" onClick$={() => data.foundDealers = data.cityDealers[data.selectedCity]}>
+                <button class="p-3 bg-[#248DF2] rounded-full flex-grow-0 w-14 md:basis-[10%] md:ml-4" onClick$={() => 
+                                                                                                                        data.foundDealers = data.stateCities[data.selectedState].some((city: string) => city === data.selectedCity)
+                                                                                                                        ? data.cityDealers[data.selectedCity]
+                                                                                                                        : []
+                                                                                                                }>
                     <ChevronRightIcon size={30} />
                 </button>
 
             </form>
 
             {
-                data.foundDealers.length
+                data.foundDealers?.length
                 ?
-                    <div class="w-full text-white p-10 pl-0 rounded-3xl max-w-[70%] bg-transparent mt-20">
+            <div class="w-full text-white p-10 pl-0 rounded-3xl max-w-[70%] bg-transparent mt-20">
                 <table class="w-full text-center rounded-xl">
                     <thead class="border-y-4 border-x-4">
                         <tr>
@@ -108,7 +112,12 @@ export default component$(() => {
                     </tbody>
                 </table>
             </div>
-                : <></>
+                : 
+                    data.selectedCity
+                        ?
+                            <div class="text-white p-10 pl-0 bg-transparent mt-20">Nenhum resultado encontrado para o Estado <span class="font-bold italic">{data.selectedState}</span> e Cidade <span class="font-bold italic">{data.selectedCity}</span></div>
+                        :
+                            <></>
             }
         </div>
     )
