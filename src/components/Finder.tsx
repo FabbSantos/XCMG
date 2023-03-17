@@ -10,7 +10,7 @@ export default component$(() => {
         cityDealers: {},
         selectedState: '',
         selectedCity: '',
-        foundDealers: [{ name: "Yamadiesel (RJ)", address: "Av Dr Jefferson G. Bruno, 1290, Paraiso II, Resende/RJ Tel (24) 33818485" }] //new Array<any>
+        foundDealers: new Array<any> //[{ name: "Yamadiesel (RJ)", address: "Av Dr Jefferson G. Bruno, 1290, Paraiso II, Resende/RJ Tel (24) 33818485" }]
     })
 
     useBrowserVisibleTask$(() => {
