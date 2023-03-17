@@ -1,5 +1,5 @@
 import { component$ } from "@builder.io/qwik";
-// import Finder from "./Finder";
+import Finder from "./Finder";
 
 export default component$(() => {
     return (
@@ -12,7 +12,7 @@ export default component$(() => {
                 <p class="text-[#7ABDED] lg:text-2xl lg:max-w-[50%] my-12">
                     A XCMG tem uma ampla Rede de Distribuição que garante o atendimento com qualidade em todo o território nacional. Encontre os pontos de venda de sua cidade:
                 </p>
-                {/* <Finder/> */}
+                <Finder/>
             </div>
         </div>
     ) 
