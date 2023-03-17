@@ -1,5 +1,5 @@
 // import { component$, useStyles$, useStore } from '@builder.io/qwik';
-import { component$, useStyles$ } from '@builder.io/qwik';
+import { component$, QwikSubmitEvent, useStyles$ } from '@builder.io/qwik';
 
 
 // export function handleName(e: Event, data: any) {
@@ -26,7 +26,12 @@ export default component$(() => {
 
 
     return (
-        <form action="form.php" method="POST" class="lg:max-w-[70%] mx-auto" >
+        <form action="form.php" method="POST" class="lg:max-w-[70%] mx-auto" onSubmit$={(event: QwikSubmitEvent<HTMLFormElement>, form: HTMLFormElement) => {
+          if (!Array.from(form.querySelectorAll('input')).every(i => i.checkValidity())) {
+            alert('Dados inválidos. Por favor reveja as informações do formulário.')
+            return false
+          }
+        }} >
             <h3 class="font-extrabold text-white text-lg pb-6"> Faça seu cadastro e receba mais informações! </h3 >
 
             <div class="flex flex-row gap-2">
@@ -41,7 +46,7 @@ export default component$(() => {
             </div>
 
             <fieldset>
-                <input required name="tel" type="tel" placeholder='Telefone de contato Whatsapp' maxLength={20} />
+                <input required name="tel" type="tel" placeholder='Telefone de contato Whatsapp' maxLength={20} minLength={9} />
                 {/* onInput$={(e) => (data.tel = (e.target as HTMLInputElement).value)} /> */}
             </fieldset>
 
