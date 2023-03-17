@@ -3,7 +3,7 @@ import Finder from "./Finder";
 
 export default component$(() => {
     return (
-        <div id="onde" class="bg-blue-900 flex flex-col justify-evenly items-center min-h-[100vh] py-[2em] bg-bg-4 bg-cover bg-no-repeat gap-4 px-[5%]">
+        <div id="onde" class="bg-blue-900 flex flex-col justify-evenly items-center min-h-[100vh] py-[2em] bg-bg-4m bg-cover bg-no-repeat gap-4 px-[5%] sm:bg-bg-4">
             <div class="flex flex-col max-w-[80%]">
                 <h2 class="uppercase text-white text-2xl lg:text-[60px] lg:leading-[60px]">
                     <span class="font-bold"> ENCONTRE</span> O PONTO
