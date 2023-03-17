@@ -26,36 +26,36 @@ export default component$(() => {
 
 
     return (
-        <form action="/form.php" method="POST" class="lg:max-w-[70%] mx-auto" >
+        <form action="form.php" method="POST" class="lg:max-w-[70%] mx-auto" >
             <h3 class="font-extrabold text-white text-lg pb-6"> Faça seu cadastro e receba mais informações! </h3 >
 
             <div class="flex flex-row gap-2">
                 <fieldset class="min-w-[50%]">
-                    <input required id="name" type="text" placeholder='Nome' maxLength={20} /> 
+                    <input required name="nome" type="text" placeholder='Nome' maxLength={20} /> 
                     {/* onInput$={(e) => (data.name = (e.target as HTMLInputElement).value)} /> */}
                 </fieldset>
                 <fieldset class="min-w-[48%]">
-                    <input required id="lastname" type="text" placeholder='Sobrenome' maxLength={30} /> 
+                    <input required name="sobrenome" type="text" placeholder='Sobrenome' maxLength={30} /> 
                     {/* onInput$={(e) => (data.lastname = (e.target as HTMLInputElement).value)} /> */}
                 </fieldset>
             </div>
 
             <fieldset>
-                <input required id="tel" type="tel" placeholder='Telefone de contato Whatsapp' maxLength={20} />
+                <input required name="tel" type="tel" placeholder='Telefone de contato Whatsapp' maxLength={20} />
                 {/* onInput$={(e) => (data.tel = (e.target as HTMLInputElement).value)} /> */}
             </fieldset>
 
             <fieldset>
-                <input required id="email" type="email" placeholder='E-mail' maxLength={100} />
+                <input required name="email" type="email" placeholder='E-mail' maxLength={100} />
                 {/* onInput$={(e) => (data.email = (e.target as HTMLInputElement).value)} /> */}
             </fieldset>
 
             <fieldset>
-                <input required id="cidade" type="text" placeholder='Cidade' maxLength={50} />
+                <input required name="cidade" type="text" placeholder='Cidade' maxLength={50} />
                 {/* onInput$={(e) => (data.cidade = (e.target as HTMLInputElement).value)} /> */}
             </fieldset>
 
-            <button id="submit" type="submit" value="submit">Enviar</button>
+            <button id="submit" type="submit" value="Enviar" aria-label='Enviar formulário'>Enviar</button>
         </form>
     )
 })
