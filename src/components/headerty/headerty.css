@@ -1,0 +1,45 @@
+header {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  padding: 1em;
+}
+
+header .logo a {
+  display: inline-block;
+  padding: 10px 10px 7px 20px;
+}
+
+header ul {
+  margin: 0;
+  padding: 3px 10px 0 0;
+  list-style: none;
+  flex: 1;
+  text-align: right;
+}
+
+header li {
+  display: inline-block;
+  margin-right: 2.5em;
+  font-size: 20px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header li a {
+  flex-grow: initial;
+  /* display: inline-block; */
+  font-weight: bold;
+  color:  #004C96;
+  /* padding: 15px 10px; */
+  text-decoration: none;
+}
+
+header li a:hover {
+  text-decoration: underline;
+}

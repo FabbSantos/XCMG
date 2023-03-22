@@ -1,6 +1,6 @@
 import { component$, useStylesScoped$ } from '@builder.io/qwik';
 import Logo from '../../img/logo.jpg'
-import styles from './header.css?inline';
+import styles from './headerty.css?inline';
 
 export default component$(() => {
   useStylesScoped$(styles);
@@ -25,6 +25,14 @@ export default component$(() => {
           <a href="#onde">
             Onde estamos
           </a>
+        </li>
+        <li>
+          <div class="flex flex-col text-center">
+            <span class="text-[#004C96] font-bold text-sm">WhatsApp Vendas</span>
+            <a href="https://wa.me/551621033505" target="_blank" rel='noopener noreferrer'>
+              (16) 2103-3505
+            </a>
+          </div>
         </li>
       </ul>
       

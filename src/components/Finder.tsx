@@ -1,5 +1,5 @@
 import { component$, useBrowserVisibleTask$, useStore, QwikChangeEvent } from "@builder.io/qwik";
-import { ChevronRightIcon } from "qwik-feather-icons";
+// import { ChevronRightIcon } from "qwik-feather-icons";
 import type { ParseResult } from 'papaparse'
 import { parse } from 'papaparse';
 
@@ -69,23 +69,39 @@ export default component$(() => {
     return (
         <div class="ml-0">
             <form class="pl-0 w-1/2 flex flex-col gap-4 justify-center items-center min-w-full md:min-w-[550px] md:flex-row md:justify-between" preventdefault:submit>
-                <select name="estado" id="estado" class="rounded-3xl py-3 pl-4 md:basis-[50%]" onChange$={(e: QwikChangeEvent<HTMLSelectElement>) => data.selectedState = e.target.value}>
-                    <option value="Estado" selected disabled>Estado</option>
-                    {data.statesAbbr.map(state => <option value={state}>{state}</option>)}
+                <select name="estado" id="estado" class="rounded-3xl py-3 pl-4 md:basis-[50%]" onChange$={(e: QwikChangeEvent<HTMLSelectElement>) => {
+                        data.selectedState = e.target.value
+                        data.selectedCity = ""
+                        data.foundDealers = []
+                        document.querySelector('#cidade')!.selectedIndex = 0
+                    }
+                }>
+                    <option selected disabled>Estado</option>
+                    {data.statesAbbr.map((state: string) => <option value={state}>{state}</option>)}
                 </select>
-                <input list="cities" placeholder="Cidade" class="rounded-3xl py-3 pl-4 md:basis-[50%] md:ml-4" onChange$={(e: QwikChangeEvent<HTMLInputElement>) => data.selectedCity = e.target.value} />
+                <select name="cidade" id="cidade" class="rounded-3xl py-3 pl-4 md:basis-[50%]" onChange$={(e: QwikChangeEvent<HTMLSelectElement>) => {
+                        data.selectedCity = e.target.value
+                        data.foundDealers = data.stateCities[data.selectedState].some((city: string) => city === data.selectedCity)
+                                            ? data.cityDealers[data.selectedCity]
+                                            : []
+                    }
+                }>
+                    <option value="" selected disabled>Cidade</option>
+                    {data.stateCities[data.selectedState]?.map((city: string) => <option value={city}>{city}</option>)}
+                </select>
+                {/* <input list="cities" placeholder="Cidade" class="rounded-3xl py-3 pl-4 md:basis-[50%] md:ml-4" onChange$={(e: QwikChangeEvent<HTMLInputElement>) => data.selectedCity = e.target.value} />
 
                 <datalist id="cities">
                     {data.stateCities[data.selectedState]?.map((city: string) => <option value={city}></option>)}
-                </datalist>
+                </datalist> */}
 
-                <button class="p-3 bg-[#248DF2] rounded-full flex-grow-0 w-14 md:basis-[10%] md:ml-4" onClick$={() => 
+                {/* <button class="p-3 bg-[#248DF2] rounded-full flex-grow-0 w-14 md:basis-[10%] md:ml-4" onClick$={() => 
                                                                                                                         data.foundDealers = data.stateCities[data.selectedState].some((city: string) => city === data.selectedCity)
                                                                                                                         ? data.cityDealers[data.selectedCity]
                                                                                                                         : []
                                                                                                                 }>
                     <ChevronRightIcon size={30} />
-                </button>
+                </button> */}
 
             </form>
 
