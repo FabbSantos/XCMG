@@ -47,10 +47,10 @@ export default component$(() => {
         <section>
           <>
           <First />
-          <Title t="Benefícios do Consórcio XCMG"/>
-          <Second/>
           <Title t="Nossos Produtos"/>
           <Third/>
+          <Title t="Benefícios do Consórcio XCMG"/>
+          <Second/>
           <Fourth/>
           </>
         </section>

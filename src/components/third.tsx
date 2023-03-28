@@ -11,45 +11,51 @@ import three_webp from '../img/XCB-P30.webp'
 
 export default component$(() => {
     return (
-        <>
-            <div id="maquinas" class="flex flex-col md:flex-row flex-wrap max-w-[90vw] mx-auto justify-around text-center text-[#004C96] font-bold my-16">
-                <div class="flex flex-col justify-center items-center">
+        <div class="bg-bg-Title bg-cover pb-4 pt-16 bg-blend-multiply bg-slate-400">
+            <div id="maquinas" class="flex flex-col md:flex-row flex-wrap max-w-[90vw] mx-auto justify-around text-center text-[#004C96] font-bold">
+                <div class="flex flex-col justify-center items-center bg-white rounded-lg pb-4">
                     <picture>
                         <source srcSet={two_avif} type="image/avif"/>
                         <source srcSet={two_webp} type="image/webp"/>
                         <img src={two_png} alt="Guindaste de Rastelo" loading="lazy" height="250px" width="300px" />
                     </picture>
+                    <h4 class="font-bold text-3xl my-4">Empilhadeira</h4>
                     <h4 class="font-bold text-3xl my-4">XCB-P25/L25</h4>
-                    <p class="font-medium text-xl my-4">R$220.000,00</p>
-                    <p class="font-medium text-2xl text-center">Plano Normal<br />100 meses - R$2639,90</p>
+                    <p class="font-medium text-2xl text-center">100 meses - R$2639,90</p>
+                    <p class="font-medium text-2xl text-center">Plano Normal</p>
+                    <p class="font-medium text-base my-4">R$220.000,00</p>
                 </div>
-                <div class="flex flex-col justify-center items-center">
+                <div class="flex flex-col justify-center items-center bg-white rounded-lg pb-4">
                     <picture>
                         <source srcSet={one_avif} type="image/avif"/>
                         <source srcSet={one_webp} type="image/webp"/>
                         <img src={one_png} alt="Guindaste de Rastelo" loading="lazy" height="250px" width="300px" />
                     </picture>
+                    <h4 class="font-bold text-3xl my-4">Mini Escavadeira</h4>
                     <h4 class="font-bold text-3xl my-4">XE17U</h4>
-                    <p class="font-medium text-xl my-4">R$210.000,00</p>
-                    <p class="font-medium text-2xl text-center">Plano Normal<br/>100 meses - R$2519,90</p>
+                    <p class="font-medium text-2xl text-center">100 meses - R$2519,90</p>
+                    <p class="font-medium text-2xl text-center">Plano Normal</p>
+                    <p class="font-medium text-base my-4">R$210.000,00</p>
                 </div>
-                <div class="flex flex-col justify-center items-center">
+                <div class="flex flex-col justify-center items-center bg-white rounded-lg pb-4">
                     <picture>
                         <source srcSet={three_avif} type="image/avif"/>
                         <source srcSet={three_webp} type="image/webp"/>
                         <img src={three_png} alt="Guindaste de caminhão" loading="lazy" height="250px" width="300px" />
                     </picture>
+                    <h4 class="font-bold text-3xl my-4">Empilhadeira</h4>
                     <h4 class="font-bold text-3xl my-4">XCB-P30/L30</h4>
-                    <p class="font-medium text-xl my-4">R$230.000,00</p>
-                    <p class="font-medium text-2xl text-center">Plano Normal<br />100 meses - R$2759,89</p>
+                    <p class="font-medium text-2xl text-center">100 meses - R$2759,89</p>
+                    <p class="font-medium text-2xl text-center">Plano Normal</p>
+                    <p class="font-medium text-base my-4">R$230.000,00</p>
                 </div>
             </div>
             {/* <div class="w-full flex justify-center py-[1em] pb-20">
                 <button class="font-bold text-xl py-1 px-[2em] rounded-xl bg-[#004C96] text-white self-center"> Veja mais </button>
             </div> */}
-            <div class="w-full flex justify-center py-[1em] pb-20">
+            <div class="w-full flex justify-center pt-8 pb-5">
                 <button class="font-bold text-xl py-1 px-[2em] rounded-xl bg-[#004C96] text-white self-center" onClick$={() => document.querySelector('form')?.scrollIntoView()}> Conheça nossos planos </button>
             </div>
-        </>
+        </div>
     )
 })
