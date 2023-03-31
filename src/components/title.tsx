@@ -4,8 +4,8 @@ import { component$ } from "@builder.io/qwik";
 export default component$((props:t) => {
     const title = props.t
     return (
-        <div class="lg:min-h-[100px] w-full bg-bg-Title bg-no-repeat bg-center bg-contain bg-[#FFBF3B] flex justify-center align-center font-extrabold text-center text-3xl lg:text-5xl p-4 text-[#004C96]">
-            <h2>{title}</h2>
+        <div class="lg:min-h-[100px] w-full bg-bg-Title bg-repeat bg-left-top font-extrabold text-center text-3xl lg:text-5xl p-4 text-[#004C96]">
+            <h2 class="pt-2">{title}</h2>
         </div>
     )
 })

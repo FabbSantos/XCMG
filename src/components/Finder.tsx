@@ -136,7 +136,7 @@ export default component$(() => {
                             <></>
             }
 
-            <div class="text-white text-center text-4xl mt-5">Vantagens de peso que só o consórcio tem</div>
+            <div class="text-white text-center text-4xl mt-5">Vantagens de peso que só o consórcio tem!</div>
         </div>
     )
 })

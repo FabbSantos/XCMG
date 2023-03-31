@@ -11,7 +11,7 @@ import three_webp from '../img/XCB-P30.webp'
 
 export default component$(() => {
     return (
-        <div class="bg-bg-Title bg-cover pb-4 pt-16 bg-blend-multiply bg-slate-400">
+        <div class="bg-bg-amarelo bg-cover pb-4 pt-16 bg-blend-multiply bg-slate-400">
             <div id="maquinas" class="flex flex-col md:flex-row flex-wrap max-w-[90vw] mx-auto justify-around text-center text-[#004C96] font-bold">
                 <div class="flex flex-col justify-center items-center bg-white rounded-lg pb-4">
                     <picture>
@@ -21,9 +21,9 @@ export default component$(() => {
                     </picture>
                     <h4 class="font-bold text-3xl my-4">Empilhadeira</h4>
                     <h4 class="font-bold text-3xl my-4">XCB-P25/L25</h4>
-                    <p class="font-medium text-2xl text-center">100 meses - R$2639,90</p>
+                    <p class="font-medium text-2xl text-center">100 meses - R$ 2.639,90</p>
                     <p class="font-medium text-2xl text-center">Plano Normal</p>
-                    <p class="font-medium text-base my-4">R$220.000,00</p>
+                    <p class="font-medium text-base my-4">R$ 220.000,00</p>
                 </div>
                 <div class="flex flex-col justify-center items-center bg-white rounded-lg pb-4">
                     <picture>
@@ -33,9 +33,9 @@ export default component$(() => {
                     </picture>
                     <h4 class="font-bold text-3xl my-4">Mini Escavadeira</h4>
                     <h4 class="font-bold text-3xl my-4">XE17U</h4>
-                    <p class="font-medium text-2xl text-center">100 meses - R$2519,90</p>
+                    <p class="font-medium text-2xl text-center">100 meses - R$ 2.519,90</p>
                     <p class="font-medium text-2xl text-center">Plano Normal</p>
-                    <p class="font-medium text-base my-4">R$210.000,00</p>
+                    <p class="font-medium text-base my-4">R$ 210.000,00</p>
                 </div>
                 <div class="flex flex-col justify-center items-center bg-white rounded-lg pb-4">
                     <picture>
@@ -45,9 +45,9 @@ export default component$(() => {
                     </picture>
                     <h4 class="font-bold text-3xl my-4">Empilhadeira</h4>
                     <h4 class="font-bold text-3xl my-4">XCB-P30/L30</h4>
-                    <p class="font-medium text-2xl text-center">100 meses - R$2759,89</p>
+                    <p class="font-medium text-2xl text-center">100 meses - R$ 2.759,89</p>
                     <p class="font-medium text-2xl text-center">Plano Normal</p>
-                    <p class="font-medium text-base my-4">R$230.000,00</p>
+                    <p class="font-medium text-base my-4">R$ 230.000,00</p>
                 </div>
             </div>
             {/* <div class="w-full flex justify-center py-[1em] pb-20">

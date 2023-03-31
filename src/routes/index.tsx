@@ -14,6 +14,7 @@ export default component$(() => {
     <>
       <main>
         <Header>
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"/>
           {/* <!-- Google Tag Manager --> */}
           <script dangerouslySetInnerHTML={
             `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -44,7 +45,7 @@ export default component$(() => {
           }/>
           {/* <!-- End Meta Pixel Code --> */}
         </Header>
-        <section>
+        <section class="drop-shadow subpixel-antialiased">
           <>
           <First />
           <Title t="Nossos Produtos"/>
