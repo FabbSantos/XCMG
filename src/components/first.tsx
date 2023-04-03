@@ -7,7 +7,7 @@ export default component$(() => {
             <div class="flex flex-col gap-4 pt-10 lg:pt-5 px-2 md:max-w-[80%] mx-auto text-left justify-center align-center">
                 <h1 class="text-white lg:text-[28px] font-black mx-auto lg:leading-[50px]">
                     <span class="text-3xl lg:text-5xl">Maquinário pesado, com parcelas levíssimas.</span><br/>
-                    Adquira os seus maquinários com o <span class="text-[#FFC700]"> Consórcio XCMG</span>
+                    Adquira o seu produto de linha amarela com o<span class="text-[#FFC700]"> Consórcio XCMG</span>
                 </h1>
                 <h2 class="font-medium text-2xl text-white">
                     A terceira maior empresa de maquinários de construção do mundo.
