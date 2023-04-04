@@ -12,45 +12,45 @@ import three_webp from '../img/XCB-P30.webp'
 export default component$(() => {
     return (
         <div class="bg-bg-amarelo bg-cover pb-4 pt-16 bg-blend-multiply bg-slate-400">
-            <div id="maquinas" class="flex flex-col md:flex-row flex-wrap max-w-[90vw] mx-auto justify-around text-center text-[#000] font-bold">
-                <div class="flex flex-col justify-center items-center bg-white rounded-lg pb-11 p-10 xl:w-[calc(100%/4)] shadow-md">
+            <div id="maquinas" class="flex flex-col gap-12 lg:gap-0 lg:flex-row flex-wrap max-w-[90vw] mx-auto justify-around text-center text-[#000] font-bold">
+                <div class="flex flex-col justify-center items-center bg-white rounded-lg pb-11 p-10  mx-auto lg:w-[calc(100%/4)] shadow-md">
                     <picture>
                         <source srcSet={two_avif} type="image/avif"/>
                         <source srcSet={two_webp} type="image/webp"/>
                         <img src={two_png} alt="Guindaste de Rastelo" loading="lazy" height="250px" width="300px" />
                     </picture>
-                    <h4 class="font-bold text-2xl ">Empilhadeira <span class="font-normal text-lg my-1 mb-10 opacity-60">XCB-P25/L25</span> </h4>
+                    <h4 class="font-bold  ">Empilhadeira <span class="font-normal text-lg my-1 mb-10 opacity-60">XCB-P25/L25</span> </h4>
                     <span class=" border-solid border-b-[1px] w-full pb-4 border-black"></span>
-                    <p class="font-light text-xl text-center mt-8">100 meses</p>
-                    <p class="font-bold text-2xl"> R$ 2.639,90</p>
-                    <p class="font-light text-xl text-center mt-10">Plano Normal</p>
-                    <p class="font-medium text-lg text-center">R$ 220.000,00</p>
+                    <p class="plan font-light  text-center mt-8">100 meses</p>
+                    <p class="price font-bold "> R$ 2.639,90</p>
+                    <p class="plan font-light  text-center mt-10">Plano Normal</p>
+                    <p class="price-n font-medium  text-center">R$ 220.000,00</p>
                 </div>
-                <div class="flex flex-col justify-center items-center bg-white rounded-lg pb-4 xl:w-[calc(100%/4)]">
+                <div class="flex flex-col justify-center items-center bg-white rounded-lg pb-4 p-10  mx-auto lg:w-[calc(100%/4)]">
                     <picture>
                         <source srcSet={one_avif} type="image/avif"/>
                         <source srcSet={one_webp} type="image/webp"/>
                         <img src={one_png} alt="Guindaste de Rastelo" loading="lazy" height="250px" width="300px" />
                     </picture>
-                    <h4 class="font-bold text-2xl ">Mini Escavadeira <span class="font-normal text-lg my-1 mb-10 opacity-60">XE17U</span></h4>
+                    <h4 class="font-bold ">Mini Escavadeira <span class="font-normal text-lg my-1 mb-10 opacity-60">XE17U</span></h4>
                     <span class=" border-solid border-b-[1px] w-full pb-4 border-black"></span>
-                    <p class="font-light text-xl text-center mt-8">100 meses</p>
-                    <p class="font-bold text-2xl">R$ 2.519,90</p>
-                    <p class="font-light text-xl text-center mt-10">Plano Normal</p>
-                    <p class="font-medium text-lg text-center">R$ 210.000,00</p>
+                    <p class="plan font-light  text-center mt-8">100 meses</p>
+                    <p class="price font-bold ">R$ 2.519,90</p>
+                    <p class="plan font-light  text-center mt-10">Plano Normal</p>
+                    <p class="price-n font-medium  text-center">R$ 210.000,00</p>
                 </div>
-                <div class="flex flex-col justify-center items-center bg-white rounded-lg pb-4 xl:w-[calc(100%/4)]">
+                <div class="flex flex-col justify-center items-center bg-white rounded-lg pb-4 p-10  mx-auto lg:w-[calc(100%/4)]">
                     <picture>
                         <source srcSet={three_avif} type="image/avif"/>
                         <source srcSet={three_webp} type="image/webp"/>
                         <img src={three_png} alt="Guindaste de caminhão" loading="lazy" height="250px" width="300px" />
                     </picture>
-                    <h4 class="font-bold text-2xl">Empilhadeira <span class="font-normal text-lg my-1 mb-10 opacity-60">XCB-P30/L30</span></h4>
+                    <h4 class="font-bold ">Empilhadeira <span class="font-normal text-lg my-1 mb-10 opacity-60">XCB-P30/L30</span></h4>
                     <span class=" border-solid border-b-[1px] w-full pb-4 border-black"></span>
-                    <p class="font-light text-xl text-center mt-8">100 meses</p>
-                    <p class="font-bold text-2xl">R$ 2.759,89</p>
-                    <p class="font-light text-xl text-center mt-10">Plano Normal</p>
-                    <p class="font-medium text-lg text-center">R$ 230.000,00</p>
+                    <p class="plan  font-light  text-center mt-8">100 meses</p>
+                    <p class="price font-bold ">R$ 2.759,89</p>
+                    <p class="plan font-light  text-center mt-10">Plano Normal</p>
+                    <p class="price-n font-medium  text-center">R$ 230.000,00</p>
                 </div>
             </div>
             {/* <div class="w-full flex justify-center py-[1em] pb-20">
