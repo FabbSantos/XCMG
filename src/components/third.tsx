@@ -19,7 +19,7 @@ export default component$(() => {
                         <source srcSet={two_webp} type="image/webp"/>
                         <img src={two_png} alt="Guindaste de Rastelo" loading="lazy" height="250px" width="300px" />
                     </picture>
-                    <h4 class="font-bold  ">Empilhadeira <span class="font-normal text-lg my-1 mb-10 opacity-60">XCB-P25/L25</span> </h4>
+                    <h4 class="font-bold">Empilhadeira <span class="font-normal my-1 mb-10 opacity-60 whitespace-nowrap">XCB-P25/L25</span></h4>
                     <span class=" border-solid border-b-[1px] w-full pb-4 border-black"></span>
                     <p class="plan font-light  text-center mt-8">100 meses</p>
                     <p class="price font-bold "> R$ 2.639,90</p>
@@ -32,7 +32,7 @@ export default component$(() => {
                         <source srcSet={one_webp} type="image/webp"/>
                         <img src={one_png} alt="Guindaste de Rastelo" loading="lazy" height="250px" width="300px" />
                     </picture>
-                    <h4 class="font-bold ">Mini Escavadeira <span class="font-normal text-lg my-1 mb-10 opacity-60">XE17U</span></h4>
+                    <h4 class="font-bold">Mini Escavadeira <span class="font-normal my-1 mb-10 opacity-60 whitespace-nowrap">XE17U</span></h4>
                     <span class=" border-solid border-b-[1px] w-full pb-4 border-black"></span>
                     <p class="plan font-light  text-center mt-8">100 meses</p>
                     <p class="price font-bold ">R$ 2.519,90</p>
@@ -45,7 +45,7 @@ export default component$(() => {
                         <source srcSet={three_webp} type="image/webp"/>
                         <img src={three_png} alt="Guindaste de caminhão" loading="lazy" height="250px" width="300px" />
                     </picture>
-                    <h4 class="font-bold ">Empilhadeira <span class="font-normal text-lg my-1 mb-10 opacity-60">XCB-P30/L30</span></h4>
+                    <h4 class="font-bold">Empilhadeira <span class="font-normal my-1 mb-10 opacity-60 whitespace-nowrap">XCB-P30/L30</span></h4>
                     <span class=" border-solid border-b-[1px] w-full pb-4 border-black"></span>
                     <p class="plan  font-light  text-center mt-8">100 meses</p>
                     <p class="price font-bold ">R$ 2.759,89</p>

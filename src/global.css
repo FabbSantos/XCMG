@@ -42,9 +42,11 @@ a:hover {
 
 
 h4 {
-  font-size: clamp(16px, 5vw, 1.2rem);
+  font-size: clamp(16px, 4vw, 1.3rem);
 }
-
+h4 >span {
+  font-size: clamp(14px, 2vw, 1rem);
+}
 .plan {
   font-size: clamp(16px, 5vw, 1.2rem);
 }
