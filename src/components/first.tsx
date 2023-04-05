@@ -5,7 +5,7 @@ import maquinario from '../img/maquinarios.png'
 export default component$(() => {
     return (
         <div class=" flex-col w-full bg-blue-900 bg-cover bg-center flex justify-center  lg:justify-between lg:min-h-[90vh] lg:bg-bg-1">
-            <div class="flex flex-col-reverse gap-12 lg:gap-24 pt-10 w-full lg:pt-5 lg:min-h-[90vh] px-[5%] lg:px-[3%] lg:flex-row mx-auto text-left lg:justify-between">
+            <div class="flex flex-col-reverse gap-12 lg:gap-24 pt-10 w-full lg:pt-5 lg:min-h-[100vh] px-[5%] lg:px-[3%] lg:flex-row mx-auto text-left lg:justify-between">
                 <div class="basis-1/3 flex justify-center lg:justify-start items-center">
                     <div class="bg-blue-900 flex justify-start items-start rounded-xl lg:max-w-[70%]">
                         <Form />
