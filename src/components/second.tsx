@@ -33,7 +33,7 @@ export default component$(() => {
                 <ul class="max-w-[80%] text-center p-0">
                     <li>Parcelas lineares</li>
                     <li>Planos em até 100 meses</li>
-                    <li>Liberação de crédito mais rápido do mercados</li>
+                    <li>Liberação de crédito mais rápido do mercado</li>
                 </ul>
             </div>
 
