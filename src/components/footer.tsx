@@ -23,7 +23,7 @@ export default component$(() => {
                 <div class="flex flex-col flex-wrap md:flex-row items-center lg:items-start justify-around w-full max-w-[90vw] mt-10 gap-5">
                     <a class='flex-none flex justify-center' href='https://abac.org.br/' rel='noopener noreferrer'><img src={abac} alt="Associação Brasileira de Administradora de Consórcios" width="auto" height="67" loading="lazy" class="my-4 lg:my-0 h-[67px]"/></a>
                     <a class='flex-none flex justify-center' href='https://www.bcb.gov.br/' rel='noopener noreferrer'><img src={banco} alt="Banco Central do Brasil" width="auto" height="67" loading="lazy" class="my-4 lg:my-0 h-[67px]" /></a>
-                    <a class='flex-none flex justify-center bg-white rounded-full' rel='noopener noreferrer'><img src={iso} alt="International Organization for Standardization" width="auto" height="67" loading="lazy" class="my-4 lg:my-0 h-[67px]" /></a>
+                    <a class='flex-none flex justify-center my-4 bg-white rounded-full' rel='noopener noreferrer'><img src={iso} alt="International Organization for Standardization" width="auto" height="67" loading="lazy" class="lg:my-0 h-[67px]" /></a>
                     <a class='flex-none flex justify-center' rel='noopener noreferrer'><img src={great} alt="Certificado Great Place to Work" width="auto" height="67" loading="lazy" class="my-4 lg:my-0 h-[67px]" /></a>
                 </div>
 

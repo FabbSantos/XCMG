@@ -6,7 +6,7 @@ import seg from '../img/seg.png'
 
 export default component$(() => {
     return (
-        <div id="consorcio" class="flex flex-col md:flex-row justify-center md:justify-around align-center bg-bg-3m bg-cover sm:bg-bg-3 py-32">
+        <div id="consorcio" class="flex flex-col md:flex-row justify-center md:justify-around align-center bg-bg-3m bg-cover sm:bg-bg-3 py-32 px-5 gap-12 lg:gap-0">
             <div class="flex flex-col justify-start items-center gap-2 text-white basis-[23%] bg-[#004C96] rounded-xl pt-5">
                 <h2 class="text-xl min-h-[2.5em] text-center font-extrabold mx-2">Menor custo do mercado:</h2>
                 <img src={cofrinho} alt="Menor custo do mercado" loading="lazy" width="130px" height="130px"/>

@@ -1,13 +1,13 @@
 import { component$ } from "@builder.io/qwik";
 import Form from "./form";
-import maquinario from '../img/maquinarios.png'
+import bgMobile from "../img/d1-mobile.jpg"
 
 export default component$(() => {
     return (
         <div class=" flex-col w-full bg-blue-900 bg-cover bg-center flex justify-center  lg:justify-between lg:min-h-[90vh] lg:bg-bg-1">
             <div class="flex flex-col-reverse gap-12 lg:gap-24 pt-10 w-full lg:pt-5 lg:min-h-[100vh] px-[5%] lg:px-[3%] lg:flex-row mx-auto text-left lg:justify-between">
-                <div class="basis-1/3 flex justify-center lg:justify-start items-center">
-                    <div class="bg-blue-900 flex justify-start items-start rounded-xl lg:max-w-[70%]">
+                <div class="lg:basis-1/3 flex flex-col justify-start items-center">
+                    <div class="bg-blue-900 flex justify-start items-start rounded-xl">
                         <Form />
                     </div>
                 </div>
@@ -22,9 +22,9 @@ export default component$(() => {
                 </div>
 
             </div>
-                <div class="basis-1/3 flex justify-center items-end pb-10 relative mt-6 lg:hidden ">
-                    <img class="lg:absolute lg:min-w-[160%] bottom-0" src={maquinario} alt="Maquinário XCMG" width="500px" loading="eager"/>
-                </div>
+            <div class="w-full flex justify-center items-end relative lg:hidden ">
+                <img class="w-full" src={bgMobile} alt="Maquinário XCMG" width="500px" loading="lazy"/>
+            </div>
         </div>
     )
 })
