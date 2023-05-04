@@ -68,8 +68,10 @@ export default component$(() => {
 
     return (
         <div class="ml-0">
-            <form class="pl-0 w-1/2 flex flex-col gap-4 justify-center items-center min-w-full md:min-w-[550px] md:flex-row md:justify-between" preventdefault:submit>
-                <select name="estado" id="estado" class="rounded-3xl py-3 pl-4 md:basis-[50%]" onChange$={(e: QwikChangeEvent<HTMLSelectElement>) => {
+            <h3 class="text-[#003E88] text-left text-2xl mt-5">Encontre os pontos de venda de sua cidade:</h3>
+
+            <form class="pl-0 w-[80%] flex flex-col gap-4 justify-center items-center min-w-full md:min-w-[550px] md:flex-row md:justify-between" preventdefault:submit>
+                <select name="estado" id="estado" class="border border-[#003E88] rounded-2xl py-3 pl-4 md:basis-[50%]" onChange$={(e: QwikChangeEvent<HTMLSelectElement>) => {
                         data.selectedState = e.target.value
                         data.selectedCity = ""
                         data.foundDealers = []
@@ -79,7 +81,7 @@ export default component$(() => {
                     <option selected disabled>Estado</option>
                     {data.statesAbbr.map((state: string) => <option value={state}>{state}</option>)}
                 </select>
-                <select name="cidade" id="cidade" class="rounded-3xl py-3 pl-4 md:basis-[50%]" onChange$={(e: QwikChangeEvent<HTMLSelectElement>) => {
+                <select name="cidade" id="cidade" class="border border-[#003E88] rounded-2xl py-3 pl-4 md:basis-[50%]" onChange$={(e: QwikChangeEvent<HTMLSelectElement>) => {
                         data.selectedCity = e.target.value
                         data.foundDealers = data.stateCities[data.selectedState].some((city: string) => city === data.selectedCity)
                                             ? data.cityDealers[data.selectedCity]
@@ -135,8 +137,6 @@ export default component$(() => {
                         :
                             <></>
             }
-
-            <div class="text-white text-center text-4xl mt-5">Vantagens de peso que só o consórcio tem!</div>
-        </div>
+    </div>
     )
 })
