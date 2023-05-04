@@ -26,32 +26,34 @@ export default component$(() => {
 
 
     return (
-        <form action="form.php" method="POST" class="p-8 ml-0 mr-auto" onSubmit$={(event: QwikSubmitEvent<HTMLFormElement>, form: HTMLFormElement) => {
+        <form action="form.php" method="POST" class=" p-0 lg:mr-20 bg-white rounded-md" onSubmit$={(event: QwikSubmitEvent<HTMLFormElement>, form: HTMLFormElement) => {
           if (!Array.from(form.querySelectorAll('input')).every(i => i.checkValidity())) {
             alert('Dados inválidos. Por favor reveja as informações do formulário.')
             return false
           }
         }} >
-            <h3 class="font-extrabold text-white text-lg pb-6"> Faça seu cadastro e receba mais informações! </h3 >
+        <div class="titlef w-full p-4 bg-[#003E88] max-w-[400px] mb-5 flex items-center justify-center">
+          <h3 class="font-normal text-white text-2xl  "> Faça seu cadastro abaixo e receba mais informações </h3 >
+          </div>
 
-            <div class="flex flex-row gap-2">
-                <fieldset class="min-w-[50%]">
-                    <input required name="nome" type="text" placeholder='Nome' maxLength={20} /> 
-                    {/* onInput$={(e) => (data.name = (e.target as HTMLInputElement).value)} /> */}
-                </fieldset>
-                <fieldset class="min-w-[48%]">
-                    <input required name="sobrenome" type="text" placeholder='Sobrenome' maxLength={30} /> 
-                    {/* onInput$={(e) => (data.lastname = (e.target as HTMLInputElement).value)} /> */}
-                </fieldset>
-            </div>
 
             <fieldset>
-                <input required name="tel" type="tel" placeholder='Telefone de contato Whatsapp' maxLength={20} minLength={9} />
+                <input required name="nome" type="text" placeholder='Nome' maxLength={20} /> 
+                {/* onInput$={(e) => (data.name = (e.target as HTMLInputElement).value)} /> */}
+            </fieldset>
+            <fieldset>
+                <input required name="email" type="email" placeholder='Email' maxLength={30} /> 
+                {/* onInput$={(e) => (data.lastname = (e.target as HTMLInputElement).value)} /> */}
+            </fieldset>
+
+
+            <fieldset>
+                <input required name="tel" type="tel" placeholder='Telefone' maxLength={20} minLength={9} />
                 {/* onInput$={(e) => (data.tel = (e.target as HTMLInputElement).value)} /> */}
             </fieldset>
 
             <fieldset>
-                <input required name="email" type="email" placeholder='E-mail' maxLength={100} />
+                <input required name="cidade" type="text" placeholder='Cidade' maxLength={100} />
                 {/* onInput$={(e) => (data.email = (e.target as HTMLInputElement).value)} /> */}
             </fieldset>
 
@@ -59,7 +61,7 @@ export default component$(() => {
                 <input required name="cidade" type="text" placeholder='Cidade' maxLength={50} />
             </fieldset> */}
 
-            <button id="submit" type="submit" value="Enviar" aria-label='Enviar formulário'>Enviar</button>
+            <button id="submit" type="submit" value="Enviar" aria-label='Enviar formulário' class="mb-5 uppercase">Simular Consórcio</button>
         </form>
     )
 })

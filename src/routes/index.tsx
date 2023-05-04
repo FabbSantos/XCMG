@@ -1,6 +1,6 @@
 import { component$ } from '@builder.io/qwik';
 import Footer from '~/components/footer';
-import Header from '../components/header/header';
+// import Header from '../components/header/header';
 import type { DocumentHead } from '@builder.io/qwik-city';
 import First from '~/components/first';
 import Fourth from '~/components/fourth';
@@ -13,7 +13,7 @@ export default component$(() => {
   return (
     <>
       <main>
-        <Header>
+        <header>
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"/>
           {/* <!-- Google Tag Manager --> */}
           <script dangerouslySetInnerHTML={
@@ -44,7 +44,7 @@ export default component$(() => {
             />`
           }/>
           {/* <!-- End Meta Pixel Code --> */}
-        </Header>
+        </header>
         <section class="drop-shadow subpixel-antialiased">
           <>
           <First />
