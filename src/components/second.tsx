@@ -6,9 +6,9 @@ import seg from '../img/security.png'
 
 export default component$(() => {
     return (
-        <div id="consorcio" class="flex flex-col items-center justify-center bg-bg-3 bg-cover">
+        <div id="consorcio" class="flex flex-col items-center justify-center bg-[#757778] md:bg-bg-3 bg-cover">
             <h2 class="uppercase text-white text-[1.3rem] font-bold md:text-[1.8rem] pt-10">BENEFÍCIOS DO CONSÓRCIO XCMG</h2>
-            <div class=" flex flex-row justify-evenly w-full py-20">
+            <div class=" flex flex-col gap-4 px-10 md:px-0 md:flex-row justify-evenly w-full py-20">
                 <div class="md:max-w-[320px] flex flex-col justify-evenly items-center gap-2  basis-[23%] bg-white text-[#003E88] rounded-xl pt-5">
                     <img src={cofrinho} alt="Menor custo do mercado" loading="lazy" width="80px" height="80px"/>
                     <h2 class="text-xl min-h-[1.5em] text-left font-bold mx-2">MENOR CUSTO DO MERCADO</h2>

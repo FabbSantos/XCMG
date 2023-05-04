@@ -5,8 +5,8 @@ import three_png from '../img/l30.png'
 // 004C96
 export default component$(() => {
     return (
-        <div class="bg-bg-maq bg-cover pb-4 pt-8 bg-blend-multiply bg-slate-400 flex flex-col items-center justify-center gap-4">
-            <h2 class="text-[#003E88] text-[1.3rem] uppercase md:text-[1.9rem] font-bold py-8">Maquinários</h2>
+        <div class="md:bg-bg-maq bg-cover pb-4 pt-8 bg-blend-multiply bg-slate-400 flex flex-col items-center justify-center gap-4">
+            <h2 class="text-[#003E88] text-[1.5rem] uppercase md:text-[1.9rem] font-bold py-8">Maquinários</h2>
             <div id="maquinas" class="flex flex-col gap-12 lg:gap-0 lg:flex-row flex-wrap max-w-[90vw] mx-auto justify-around text-center text-[#000] font-bold">
                 <div class="flex flex-col justify-start items-center bg-white rounded-lg pb-11 p-10  mx-auto lg:w-[calc(100%/4)] shadow-md">
                     <img src={two_png} alt="Guindaste de Rastelo" loading="lazy" height="250px" width="300px" />

@@ -5,7 +5,7 @@ import logo from '../img/logoxcmg.png'
 
 export default component$(() => {
     return (
-        <div id="onde" class="relative flex flex-col justify-evenly items-start min-h-[100vh] py-[2em]  gap-4 px-[5%] bg-[#D1D1D1]">
+        <div id="onde" class="relative flex flex-col justify-evenly items-center md:items-start min-h-[100vh] py-[2em]  gap-4 px-[5%] bg-[#D1D1D1]">
             <div class="flex flex-col max-w-[80%]">
                 <h2 class="uppercase font-bold text-[#003E88] text-2xl lg:text-[40px] lg:leading-[60px]">
                     ENCONTRE O PONTO DE REVENDA MAIS PRÓXIMO                
