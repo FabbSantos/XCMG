@@ -39,8 +39,8 @@ ul {
 }
 
 li {
+  position: relative;
   padding: 8px 0;
-  font-family: 'Verdana', sans-serif;
 }
 
 a:hover {

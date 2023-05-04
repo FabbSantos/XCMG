@@ -6,7 +6,7 @@ import First from '~/components/first';
 import Fourth from '~/components/fourth';
 import Second from '~/components/second';
 import Third from '~/components/third';
-import Title from '~/components/title';
+
 
 export default component$(() => {
   // const serverTime = useServerTimeLoader();
@@ -49,7 +49,6 @@ export default component$(() => {
           <>
           <First />
           <Third/>
-          <Title t="Benefícios do Consórcio XCMG"/>
           <Second/>
           <Fourth/>
           </>

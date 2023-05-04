@@ -4,10 +4,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'bg-Title': "url('/title-bg.png')",
         'bg-maq': "url('/bg-maq.webp')",
         'bg-1': "url('/banner-01.webp')",
-        'bg-3': "url('/bg3.jpg')",
+        'bg-3': "url('/bg-sec.webp')",
         'bg-4': "url('/bg4.jpg')",
         'bg-1m': "url('/bg1m.jpg')",
         'bg-3m': "url('/bg3m.jpg')",
