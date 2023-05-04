@@ -67,11 +67,11 @@ h4 >span {
   font-size: clamp(14px, 2vw, 1rem);
 }
 .plan {
-  font-size: clamp(16px, 5vw, 1.2rem);
+  font-size: clamp(16px, 5vw, 1rem);
 }
 .price {
   font-size: clamp(16px, 7vw, 1.3rem);
 }
 .price-n{
-  font-size: clamp(16px, 2vw, 1.1rem);
+  font-size: clamp(16px, 2vw, 1.3rem);
 }

@@ -48,7 +48,6 @@ export default component$(() => {
         <section class="drop-shadow subpixel-antialiased">
           <>
           <First />
-          <Title t="Nossos Produtos"/>
           <Third/>
           <Title t="Benefícios do Consórcio XCMG"/>
           <Second/>

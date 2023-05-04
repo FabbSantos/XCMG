@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'bg-Title': "url('/title-bg.png')",
-        'bg-amarelo': "url('/xcmg-amarelo.jpg')",
+        'bg-maq': "url('/bg-maq.webp')",
         'bg-1': "url('/banner-01.webp')",
         'bg-3': "url('/bg3.jpg')",
         'bg-4': "url('/bg4.jpg')",
