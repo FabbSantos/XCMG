@@ -6,7 +6,7 @@ import logo from '../img/logoxcmg.png'
 export default component$(() => {
     return (
         <div id="onde" class="relative flex flex-col justify-evenly items-center md:items-start min-h-[100vh] py-[2em]  gap-4 px-[5%] bg-[#D1D1D1]">
-            <div class="flex flex-col max-w-[80%]">
+            <div class="flex flex-col max-w-[60%] z-10">
                 <h2 class="uppercase font-bold text-[#003E88] text-2xl lg:text-[40px] lg:leading-[60px]">
                     ENCONTRE O PONTO DE REVENDA MAIS PRÓXIMO                
                 </h2>
@@ -16,9 +16,9 @@ export default component$(() => {
                 <Finder/>
             </div>
             <img src={find} alt="ENCONTRE O PONTO DE VENDA MAIS PRÓXIMO!" loading="lazy"  height="800px" width="929px" 
-                class=" absolute right-[-10%] bottom-[-5%] hidden lg:block"
+                class=" absolute right-[-10%] bottom-[-5%] hidden lg:block max-w-[64%] z-0"
             />
-            <div>
+            <div class="flex flex-col items-center md:items-start">
                 <img src={logo} alt="Consórcio XCMG" width="280px" loading="lazy"  height="60px"/>
                 <p class="font-bold text-[1.3rem] md:text-[1.6rem] text-[#003E88] mt-3">
                     Vantagens de peso que só o consórcio tem!

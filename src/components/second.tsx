@@ -11,7 +11,7 @@ export default component$(() => {
             <div class=" flex flex-col gap-4 px-10 md:px-0 md:flex-row justify-evenly w-full py-20">
                 <div class="md:max-w-[320px] flex flex-col justify-evenly items-center gap-2  basis-[23%] bg-white text-[#003E88] rounded-xl pt-5">
                     <img src={cofrinho} alt="Menor custo do mercado" loading="lazy" width="80px" height="80px"/>
-                    <h2 class="text-xl min-h-[1.5em] text-left font-bold mx-2">MENOR CUSTO DO MERCADO</h2>
+                    <h2 class="text-xl min-h-[1.5em] text-center font-bold mx-2">MENOR CUSTO DO MERCADO</h2>
                     <ul class="max-w-[90%] text-center flex flex-col items-center p-0">
                         <li>• sem juros</li>
                         <li>• sem taxa de adesão</li>
@@ -22,7 +22,7 @@ export default component$(() => {
 
                 <div class="md:max-w-[320px] flex flex-col justify-evenly items-center gap-2  basis-[23%] bg-white text-[#003E88] rounded-xl pt-5">
                     <img src={lances} alt="Lances facilitados" loading="lazy" width="80px" height="80px" />
-                    <h2 class="text-xl min-h-[1.5em] text-left font-bold mx-2">LANCES FACILITADOS</h2>
+                    <h2 class="text-xl min-h-[1.5em] text-center font-bold mx-2">LANCES FACILITADOS</h2>
                     <ul class="max-w-[90%] text-center flex flex-col items-center p-0">
                         <li>• rapidez na formação de grupos</li>
                         <li>• lances facilitados</li>
@@ -33,7 +33,7 @@ export default component$(() => {
 
                 <div class="md:max-w-[320px] flex flex-col justify-evenly items-center gap-2  basis-[23%] bg-white text-[#003E88] rounded-xl pt-5">
                     <img src={planos} alt="Planos diferenciados" loading="lazy" width="80px" height="80px" />
-                    <h2 class="text-xl min-h-[1.5em] text-left font-bold mx-2">PLANOS EXCLUSIVOS</h2>
+                    <h2 class="text-xl min-h-[1.5em] text-center font-bold mx-2">PLANOS EXCLUSIVOS</h2>
                     <ul class="max-w-[90%] text-center flex flex-col items-center p-0">
                         <li>• parcelas lineares</li>
                         <li>• planos em até 100 meses</li>
