@@ -4,6 +4,7 @@ import abac from '../img/logo-abac.png'
 import banco from '../img/bcb.png'
 import great from '../img/gptw.png'
 import iso from '../img/ison.png'
+import logof from '../img/logo_footer.png'
 
 export default component$(() => {
     return (
@@ -29,7 +30,7 @@ export default component$(() => {
                         E-mail: <a class="font-bold" rel='noreferrer' href="mailto:atendimento@ancoraconsorcios.com.br">atendimento@ancoraconsorcios.com.br</a> Ouvidoria: <b>0800 723-2227</b> - <a href="mailto:ouvidoria@ancoraconsorcios.com.br" rel='noreferrer'> E-mail: <b>ouvidoria@ancoraconsorcios.com.br</b></a>
                     </p>
                 </div>
-
+                <img src={logof} alt="Consórcio XCMG" width="140px" height="50px" class="mt-5"/>
             </div>
 
         </div>
