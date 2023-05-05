@@ -26,7 +26,7 @@ export default component$(() => {
 
 
     return (
-        <form action="form.php" method="POST" class=" p-0 lg:mr-20 bg-white rounded-md" onSubmit$={(event: QwikSubmitEvent<HTMLFormElement>, form: HTMLFormElement) => {
+        <form action="form.php" method="POST" class="frm p-0 lg:mr-20 bg-white rounded-lg" onSubmit$={(event: QwikSubmitEvent<HTMLFormElement>, form: HTMLFormElement) => {
           if (!Array.from(form.querySelectorAll('input')).every(i => i.checkValidity())) {
             alert('Dados inválidos. Por favor reveja as informações do formulário.')
             return false
