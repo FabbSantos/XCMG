@@ -16,7 +16,7 @@ export default component$(() => {
                 <Finder/>
             </div>
             <img src={find} alt="ENCONTRE O PONTO DE VENDA MAIS PRÓXIMO!" loading="lazy"  height="800px" width="929px" 
-                class=" absolute right-[-10%] bottom-[-5%] hidden lg:block max-w-[64%] z-0"
+                class=" absolute right-[-10%] bottom-[-5%] hidden lg:block max-w-[55%] z-0"
             />
             <div class="flex flex-col items-center md:items-start">
                 <img src={logo} alt="Consórcio XCMG" width="280px" loading="lazy"  height="60px"/>
